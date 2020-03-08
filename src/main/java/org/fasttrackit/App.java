@@ -10,10 +10,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        /**
-        Date date = new Date();
-        System.out.println("Today's date is: " + date.toString());
-        */
 
         System.out.println();
 
@@ -52,8 +48,6 @@ public class App
         food.name = "Pedigree";
         food.price = 10;
         food.weight = 1000;     // 1 kg
-
-        //food.expirationDate = new Date(120, 3, 20);
         food.stock = 3;
 
         System.out.println("Animal food properties are the following: ");
