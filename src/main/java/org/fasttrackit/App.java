@@ -52,14 +52,15 @@ public class App
         food.name = "Pedigree";
         food.price = 10;
         food.weight = 1000;     // 1 kg
-        //food.expirationDate
+
+        //food.expirationDate = new Date(120, 3, 20);
         food.stock = 3;
 
         System.out.println("Animal food properties are the following: ");
         System.out.println("Name: " + food.name);
         System.out.println("Price: " + food.price);
         System.out.println("Weight: "+ food.weight + " g");
-        System.out.println("Expiration Date: " + "");
+        System.out.println("Expiration Date: " );
         System.out.println("Stock: " + food.stock);
 
         System.out.println();
