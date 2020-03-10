@@ -1,4 +1,5 @@
 package org.fasttrackit;
+import java.time.LocalDate;
 import java.util.*;
 import java.text.*;
 
@@ -10,6 +11,9 @@ public class App
 {
     public static void main( String[] args )
     {
+
+        //LocalDate newDate1 = LocalDate.now().minusMonths(2);
+        //LocalDate newDate2 = LocalDate.of(2010, 3, 10);
 
         System.out.println();
 
@@ -48,13 +52,14 @@ public class App
         food.name = "Pedigree";
         food.price = 10;
         food.weight = 1000;     // 1 kg
+        food.expirationDate = LocalDate.of(2020, 3, 20);
         food.stock = 3;
 
         System.out.println("Animal food properties are the following: ");
         System.out.println("Name: " + food.name);
         System.out.println("Price: " + food.price);
         System.out.println("Weight: "+ food.weight + " g");
-        System.out.println("Expiration Date: " );
+        System.out.println("Expiration Date: " + food.expirationDate);
         System.out.println("Stock: " + food.stock);
 
         System.out.println();
