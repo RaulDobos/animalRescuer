@@ -21,9 +21,9 @@ public class App
 
         dog.name = "Oscar";
         dog.age = 2;
-        dog.health = 8;     //de la 1 la 10
-        dog.hunger = 3;     //de la 1 la 10
-        dog.hapiness = 9;   //de la 1 la 10
+        dog.health = 8;     //from 1 to 10
+        dog.hunger = 3;     //from 1 to 10
+        dog.hapiness = 9;   //from 1 to 10
         dog.favouriteActivity = "playing with a ball";
         dog.favouriteFood = "Pedigree";
 

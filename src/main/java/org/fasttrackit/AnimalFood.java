@@ -8,4 +8,8 @@ public class AnimalFood {
     int weight;
     LocalDate expirationDate;
     int stock;
+
+    //additional properties
+    String flavour;
+
 }

@@ -10,4 +10,9 @@ public class Animal {
     String favouriteFood;
     String favouriteActivity;
 
+    // additional properties
+    int maxHealth;
+    int maxHunger;
+    int maxHapiness;
+
 }
