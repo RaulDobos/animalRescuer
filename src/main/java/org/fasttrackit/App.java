@@ -21,18 +21,18 @@ public class App
 
         dog.name = "Oscar";
         dog.age = 2;
-        dog.health = 8;     //from 1 to 10
-        dog.hunger = 3;     //from 1 to 10
-        dog.hapiness = 9;   //from 1 to 10
+        dog.healthLevel = 8;     //from 1 to 10
+        dog.hungerLevel = 3;     //from 1 to 10
+        dog.hapinessLevel = 9;   //from 1 to 10
         dog.favouriteActivity = "playing with a ball";
         dog.favouriteFood = "Pedigree";
 
         System.out.println("Dog properties are the following: ");
         System.out.println("Name: " + dog.name);
         System.out.println("Age: " + dog.age);
-        System.out.println("Health: " + dog.health);
-        System.out.println("Hunger: " + dog.hunger);
-        System.out.println("Hapiness: " + dog.hapiness);
+        System.out.println("Health: " + dog.healthLevel);
+        System.out.println("Hunger: " + dog.hungerLevel);
+        System.out.println("Hapiness: " + dog.hapinessLevel);
         System.out.println("Favourite activity: " + dog.favouriteActivity);
         System.out.println("Favourite food: " + dog.favouriteFood);
 

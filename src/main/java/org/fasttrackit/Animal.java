@@ -4,14 +4,14 @@ public class Animal {
 
     String name;
     int age;
-    int health;
-    int hunger;
-    int hapiness;
+    int healthLevel;
+    int hungerLevel;
+    int hapinessLevel;
     String favouriteFood;
     String favouriteActivity;
-    int maxHealth;
-    int maxHunger;
-    int maxHapiness;
+    int maxHealthLevel;
+    int maxHungerLevel;
+    int maxHapinessLevel;
     boolean clean;
 
 }
