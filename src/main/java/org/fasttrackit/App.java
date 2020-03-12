@@ -17,7 +17,7 @@ public class App
 
         System.out.println();
 
-        Animal dog = new Animal();
+        Dog dog = new Dog();
 
         dog.name = "Oscar";
         dog.age = 2;
@@ -48,17 +48,19 @@ public class App
 
         System.out.println();
 
-        AnimalFood food = new AnimalFood();
+        DogFood food = new DogFood();
         food.name = "Pedigree";
         food.price = 10;
         food.weight = 1000;     // 1 kg
+        food.flavour = "beef";
         food.expirationDate = LocalDate.of(2020, 3, 20);
         food.stock = 3;
 
         System.out.println("Animal food properties are the following: ");
         System.out.println("Name: " + food.name);
         System.out.println("Price: " + food.price);
-        System.out.println("Weight: "+ food.weight + " g");
+        System.out.println("Weight: " + food.weight + " g");
+        System.out.println("Flavour: " + food.flavour);
         System.out.println("Expiration Date: " + food.expirationDate);
         System.out.println("Stock: " + food.stock);
 
