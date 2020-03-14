@@ -6,6 +6,5 @@ public class Activity {
 
     //additional properties
     int grantedHapiness;
-    int grantedHealth;
 }
 

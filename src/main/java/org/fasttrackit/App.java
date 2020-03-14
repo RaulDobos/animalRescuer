@@ -27,7 +27,7 @@ public class App
         dog.age = 2;
         dog.healthLevel = 8;     //from 1 to 10
         dog.hungerLevel = 3;     //from 1 to 10
-        dog.hapinessLevel = 9;   //from 1 to 10
+        dog.hapinessLevel = 5;   //from 1 to 10
         dog.favouriteActivity = "playing with a ball";
         dog.favouriteFood = "Pedigree";
 
@@ -79,16 +79,19 @@ public class App
 
         System.out.println();
 
-        Activity activity1 = new Activity();
-        activity1.name = "playing with a ball";
+        Activity playing = new Activity();
+        playing.name = "playing with a ball";
+        playing.grantedHapiness = 4;
 
-        Activity activity2 = new Activity();
-        activity2.name = "petting";
+        Activity petting = new Activity();
+        petting.name = "petting";
+        petting.grantedHapiness = 2;
 
-        Activity activity3 = new Activity();
-        activity3.name = "walking in the park";
+        Activity walking = new Activity();
+        walking.name = "walking in the park";
+        walking.grantedHapiness = 3;
 
-        System.out.println("Available activities: " + activity1.name + ", " + activity2.name + ", " + activity3.name);
+        System.out.println("Available activities: " + playing.name + ", " + petting.name + ", " + walking.name);
 
         System.out.println();
 
@@ -110,11 +113,16 @@ public class App
 
         System.out.println();
         System.out.println("Environment properties are the following: " + temperature + "°C, " + weather);
+        System.out.println();
 
         Game game = new Game();
         game.dog = dog;
         game.adopter = adopter;
         game.vet = vet;
+
+        adopter.feed(dog, food);
+
+        adopter.doActivity(dog, playing);
 
     }
 }
