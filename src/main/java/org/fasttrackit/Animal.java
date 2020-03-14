@@ -14,4 +14,9 @@ public class Animal {
     int maxHapinessLevel;
     boolean clean;
 
+    public Animal(String passedNameParameter){
+        name = passedNameParameter;
+        System.out.println("(Constructor called)");
+    }
+
 }

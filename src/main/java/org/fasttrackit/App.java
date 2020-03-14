@@ -1,4 +1,5 @@
 package org.fasttrackit;
+
 import java.time.LocalDate;
 import java.util.*;
 import java.text.*;
@@ -12,14 +13,17 @@ public class App
     public static void main( String[] args )
     {
 
-        //LocalDate newDate1 = LocalDate.now().minusMonths(2);
-        //LocalDate newDate2 = LocalDate.of(2010, 3, 10);
-
         System.out.println();
 
-        Dog dog = new Dog();
+        System.out.println("Give a name to your dog:");
 
-        dog.name = "Oscar";
+        Scanner scanner1 = new Scanner(System.in);
+        String name = scanner1.nextLine();
+
+        System.out.println("You entered the name " + name);
+
+        Dog dog = new Dog(name);
+
         dog.age = 2;
         dog.healthLevel = 8;     //from 1 to 10
         dog.hungerLevel = 3;     //from 1 to 10
@@ -38,9 +42,15 @@ public class App
 
         System.out.println();
 
-        Adopter adopter = new Adopter();
-        adopter.name = "Iulia";
-        adopter.money = 100;
+        System.out.println("Give the adopter a name: ");
+
+        name = scanner1.nextLine();
+
+        System.out.println("and a cash amount:");
+
+        int money = scanner1.nextInt();
+
+        Adopter adopter = new Adopter(name, money);
 
         System.out.println("Adopter properties are the following: ");
         System.out.println("Name: " + adopter.name);
@@ -48,14 +58,17 @@ public class App
 
         System.out.println();
 
-        DogFood food = new DogFood();
-        food.name = "Pedigree";
-        food.price = 10;
+        name = "Pedigree";
+        int price = 10;
+
+        DogFood food = new DogFood(name, price);
+
         food.weight = 1000;     // 1 kg
         food.flavour = "beef";
         food.expirationDate = LocalDate.of(2020, 3, 20);
         food.stock = 3;
 
+        System.out.println();
         System.out.println("Animal food properties are the following: ");
         System.out.println("Name: " + food.name);
         System.out.println("Price: " + food.price);
@@ -79,14 +92,24 @@ public class App
 
         System.out.println();
 
-        Vet vet = new Vet();
-        vet.name = "Alex Popa";
+        name = "Alex Popa";
+
+        Vet vet = new Vet(name);
         vet.specialization = "Dermatology";
 
+        System.out.println();
         System.out.println("Available Vets: ");
         System.out.println(vet.name + ", " + vet.specialization);
 
         System.out.println();
+
+        String weather = "rainy";
+        int temperature = 20;
+
+        Environment environment = new Environment(weather, temperature);
+
+        System.out.println();
+        System.out.println("Environment properties are the following: " + temperature + "°C, " + weather);
 
         Game game = new Game();
         game.dog = dog;

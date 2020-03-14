@@ -10,4 +10,11 @@ public class AnimalFood {
     int stock;
     String flavour;
 
+    public AnimalFood(String passedNameParameter, int passedPriceParameter){
+        name = passedNameParameter;
+        price = passedPriceParameter;
+
+        System.out.println("(constructor called)");
+    }
+
 }
