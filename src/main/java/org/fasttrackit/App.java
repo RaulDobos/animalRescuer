@@ -69,7 +69,7 @@ public class App
         food.stock = 3;
 
         System.out.println();
-        System.out.println("Animal food properties are the following: ");
+        System.out.println(food.name + " food properties are the following: ");
         System.out.println("Name: " + food.name);
         System.out.println("Price: " + food.price);
         System.out.println("Weight: " + food.weight + " g");
@@ -77,19 +77,35 @@ public class App
         System.out.println("Expiration Date: " + food.expirationDate);
         System.out.println("Stock: " + food.stock);
 
+        name = "Chappie";
+        price = 12;
+
+        DogFood food2 = new DogFood(name, price);
+        food2.weight = 1000;
+        food2.flavour = "chicken";
+        food2.expirationDate = LocalDate.of(2020, 3, 22);
+        food2.stock = 5;
+
+        System.out.println();
+        System.out.println(food2.name + " food properties are the following: ");
+        System.out.println("Name: " + food2.name);
+        System.out.println("Price: " + food2.price);
+        System.out.println("Weight: " + food2.weight + " g");
+        System.out.println("Flavour: " + food2.flavour);
+        System.out.println("Expiration Date: " + food2.expirationDate);
+        System.out.println("Stock: " + food2.stock);
+
+
         System.out.println();
 
         Activity playing = new Activity();
         playing.name = "playing with a ball";
-        playing.grantedHapiness = 4;
 
         Activity petting = new Activity();
         petting.name = "petting";
-        petting.grantedHapiness = 2;
 
         Activity walking = new Activity();
         walking.name = "walking in the park";
-        walking.grantedHapiness = 3;
 
         System.out.println("Available activities: " + playing.name + ", " + petting.name + ", " + walking.name);
 
