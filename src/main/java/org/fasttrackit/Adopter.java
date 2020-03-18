@@ -17,8 +17,11 @@ public class Adopter {
 
         boolean ok = false;
 
-        if(animal.hungerLevel > 0){
+        if(animal.hungerLevel == 1){
             animal.hungerLevel = 0;
+        }
+        else if(animal.hungerLevel > 1){
+            animal.hungerLevel -= 2;
         }
 
         if(animal.favouriteFood.equals(food.name)){

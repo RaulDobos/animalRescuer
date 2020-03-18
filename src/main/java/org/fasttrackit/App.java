@@ -18,11 +18,11 @@ public class App
         System.out.println("Give a name to your dog:");
 
         Scanner scanner1 = new Scanner(System.in);
-        String name = scanner1.nextLine();
+        String dogName = scanner1.nextLine();
 
-        System.out.println("You entered the name " + name);
+        System.out.println("You entered the name " + dogName);
 
-        Dog dog = new Dog(name);
+        Dog dog = new Dog(dogName);
 
         dog.age = 2;
         dog.healthLevel = 8;     //from 1 to 10
@@ -42,15 +42,10 @@ public class App
 
         System.out.println();
 
-        System.out.println("Give the adopter a name: ");
+        String adopterName = "Iulia";
+        int money = 100;
 
-        name = scanner1.nextLine();
-
-        System.out.println("and a cash amount:");
-
-        int money = scanner1.nextInt();
-
-        Adopter adopter = new Adopter(name, money);
+        Adopter adopter = new Adopter(adopterName, money);
 
         System.out.println("Adopter properties are the following: ");
         System.out.println("Name: " + adopter.name);
@@ -58,10 +53,10 @@ public class App
 
         System.out.println();
 
-        name = "Pedigree";
+        String foodName = "Pedigree";
         int price = 10;
 
-        DogFood food = new DogFood(name, price);
+        DogFood food = new DogFood(foodName, price);
 
         food.weight = 1000;     // 1 kg
         food.flavour = "beef";
@@ -77,10 +72,10 @@ public class App
         System.out.println("Expiration Date: " + food.expirationDate);
         System.out.println("Stock: " + food.stock);
 
-        name = "Chappie";
+        foodName = "Chappie";
         price = 12;
 
-        DogFood food2 = new DogFood(name, price);
+        DogFood food2 = new DogFood(foodName, price);
         food2.weight = 1000;
         food2.flavour = "chicken";
         food2.expirationDate = LocalDate.of(2020, 3, 22);
@@ -111,9 +106,9 @@ public class App
 
         System.out.println();
 
-        name = "Alex Popa";
+        String vetName = "Alex Popa";
 
-        Vet vet = new Vet(name);
+        Vet vet = new Vet(vetName);
         vet.specialization = "Dermatology";
 
         System.out.println();
