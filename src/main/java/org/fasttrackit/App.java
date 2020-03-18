@@ -24,21 +24,21 @@ public class App
 
         Dog dog = new Dog(dogName);
 
-        dog.age = 2;
-        dog.healthLevel = 8;     //from 1 to 10
-        dog.hungerLevel = 3;     //from 1 to 10
-        dog.hapinessLevel = 5;   //from 1 to 10
-        dog.favouriteActivity = "playing with a ball";
-        dog.favouriteFood = "Pedigree";
+        dog.setAge(2);
+        dog.setHealthLevel(8);     //from 1 to 10
+        dog.setHungerLevel(3);     //from 1 to 10
+        dog.setHapinessLevel(5);   //from 1 to 10
+        dog.setFavouriteActivity("playing with a ball");
+        dog.setFavouriteFood("Pedigree");
 
         System.out.println("Dog properties are the following: ");
-        System.out.println("Name: " + dog.name);
-        System.out.println("Age: " + dog.age);
-        System.out.println("Health: " + dog.healthLevel);
-        System.out.println("Hunger: " + dog.hungerLevel);
-        System.out.println("Hapiness: " + dog.hapinessLevel);
-        System.out.println("Favourite activity: " + dog.favouriteActivity);
-        System.out.println("Favourite food: " + dog.favouriteFood);
+        System.out.println("Name: " + dog.getName());
+        System.out.println("Age: " + dog.getAge());
+        System.out.println("Health: " + dog.getHealthLevel());
+        System.out.println("Hunger: " + dog.getHungerLevel());
+        System.out.println("Hapiness: " + dog.getHapinessLevel());
+        System.out.println("Favourite activity: " + dog.getFavouriteActivity());
+        System.out.println("Favourite food: " + dog.getFavouriteFood());
 
         System.out.println();
 
@@ -48,8 +48,8 @@ public class App
         Adopter adopter = new Adopter(adopterName, money);
 
         System.out.println("Adopter properties are the following: ");
-        System.out.println("Name: " + adopter.name);
-        System.out.println("Money: " + adopter.money);
+        System.out.println("Name: " + adopter.getName());
+        System.out.println("Money: " + adopter.getMoney());
 
         System.out.println();
 
@@ -58,62 +58,63 @@ public class App
 
         DogFood food = new DogFood(foodName, price);
 
-        food.weight = 1000;     // 1 kg
-        food.flavour = "beef";
-        food.expirationDate = LocalDate.of(2020, 3, 20);
-        food.stock = 3;
+        food.setWeight(1000);     // 1 kg
+        food.setFlavour("beef");
+        food.setExpirationDate(LocalDate.of(2020, 3, 20));
+        food.setStock(3);
 
         System.out.println();
-        System.out.println(food.name + " food properties are the following: ");
-        System.out.println("Name: " + food.name);
-        System.out.println("Price: " + food.price);
-        System.out.println("Weight: " + food.weight + " g");
-        System.out.println("Flavour: " + food.flavour);
-        System.out.println("Expiration Date: " + food.expirationDate);
-        System.out.println("Stock: " + food.stock);
+
+        System.out.println(food.getName() + " food properties are the following: ");
+        System.out.println("Name: " + food.getName());
+        System.out.println("Price: " + food.getPrice());
+        System.out.println("Weight: " + food.getWeight() + " g");
+        System.out.println("Flavour: " + food.getFlavour());
+        System.out.println("Expiration Date: " + food.getExpirationDate());
+        System.out.println("Stock: " + food.getStock());
 
         foodName = "Chappie";
         price = 12;
 
         DogFood food2 = new DogFood(foodName, price);
-        food2.weight = 1000;
-        food2.flavour = "chicken";
-        food2.expirationDate = LocalDate.of(2020, 3, 22);
-        food2.stock = 5;
+        food2.setWeight(1000);
+        food2.setFlavour("chicken");
+        food2.setExpirationDate(LocalDate.of(2020, 3, 22));
+        food2.setStock(5);
 
         System.out.println();
-        System.out.println(food2.name + " food properties are the following: ");
-        System.out.println("Name: " + food2.name);
-        System.out.println("Price: " + food2.price);
-        System.out.println("Weight: " + food2.weight + " g");
-        System.out.println("Flavour: " + food2.flavour);
-        System.out.println("Expiration Date: " + food2.expirationDate);
-        System.out.println("Stock: " + food2.stock);
+        System.out.println(food2.getName() + " food properties are the following: ");
+        System.out.println("Name: " + food2.getName());
+        System.out.println("Price: " + food2.getPrice());
+        System.out.println("Weight: " + food2.getWeight() + " g");
+        System.out.println("Flavour: " + food2.getFlavour());
+        System.out.println("Expiration Date: " + food2.getExpirationDate());
+        System.out.println("Stock: " + food2.getStock());
 
 
         System.out.println();
 
         Activity playing = new Activity();
-        playing.name = "playing with a ball";
+        playing.setName("playing with a ball");
 
         Activity petting = new Activity();
-        petting.name = "petting";
+        petting.setName("petting");
 
         Activity walking = new Activity();
-        walking.name = "walking in the park";
+        walking.setName("walking in the park");
 
-        System.out.println("Available activities: " + playing.name + ", " + petting.name + ", " + walking.name);
+        System.out.println("Available activities: " + playing.getName() + ", " + petting.getName() + ", " + walking.getName());
 
         System.out.println();
 
         String vetName = "Alex Popa";
 
         Vet vet = new Vet(vetName);
-        vet.specialization = "Dermatology";
+        vet.setSpecialization("Dermatology");
 
         System.out.println();
         System.out.println("Available Vets: ");
-        System.out.println(vet.name + ", " + vet.specialization);
+        System.out.println(vet.getName() + ", " + vet.getSpecialization());
 
         System.out.println();
 
@@ -127,9 +128,9 @@ public class App
         System.out.println();
 
         Game game = new Game();
-        game.dog = dog;
-        game.adopter = adopter;
-        game.vet = vet;
+        game.setDog(dog);
+        game.setAdopter(adopter);
+        game.setVet(vet);
 
         adopter.feed(dog, food);
 
