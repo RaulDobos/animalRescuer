@@ -13,7 +13,6 @@ public class Animal {
 
     public Animal(String passedNameParameter){
         name = passedNameParameter;
-        System.out.println("(Constructor called)");
     }
 
     public String getName() {
@@ -78,5 +77,8 @@ public class Animal {
 
     public void setClean(boolean clean) {
         this.clean = clean;
+    }
+
+    public void showHappiness(){
     }
 }

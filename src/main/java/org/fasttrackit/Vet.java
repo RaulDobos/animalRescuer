@@ -10,8 +10,6 @@ public class Vet {
 
     public Vet(String passedNameParameter){
         name = passedNameParameter;
-
-        System.out.println("(constructor called)");
     }
 
     public String getName() {

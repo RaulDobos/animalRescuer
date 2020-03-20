@@ -9,8 +9,6 @@ public class Adopter {
     public Adopter(String passedNameParameter, int passedMoneyParameter){
         name = passedNameParameter;
         money = passedMoneyParameter;
-
-        System.out.println("(constructor called)");
     }
 
     public void feed(Animal animal, AnimalFood food){

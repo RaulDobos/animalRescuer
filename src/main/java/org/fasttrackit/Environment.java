@@ -8,8 +8,6 @@ public class Environment {
     public Environment(String passedWeatherParameter, int passedTemperatureParameter){
         weather = passedWeatherParameter;
         temperature = passedTemperatureParameter;
-
-        System.out.println("(constructor called)");
     }
 
     public String getWeather() {

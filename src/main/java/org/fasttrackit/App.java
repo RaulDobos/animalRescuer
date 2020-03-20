@@ -10,6 +10,7 @@ import java.text.*;
  */
 public class App 
 {
+
     public static void main( String[] args )
     {
 
@@ -136,5 +137,10 @@ public class App
 
         adopter.doActivity(dog, playing);
 
+        dog.showHappiness();
+
+        Cat cat = new Cat("Jessie");
+
+        cat.showHappiness();
     }
 }
