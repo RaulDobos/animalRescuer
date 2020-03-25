@@ -73,4 +73,5 @@ public class Adopter {
     public void setMoney(int money) {
         this.money = money;
     }
+
 }

@@ -3,7 +3,7 @@ package org.fasttrackit;
 public class Game {
 
     private Adopter adopter;
-    private Dog dog;
+    private Animal dog;
     private Vet vet;
 
     public Adopter getAdopter() {
@@ -14,11 +14,11 @@ public class Game {
         this.adopter = adopter;
     }
 
-    public Dog getDog() {
+    public Animal getDog() {
         return dog;
     }
 
-    public void setDog(Dog dog) {
+    public void setDog(Animal dog) {
         this.dog = dog;
     }
 

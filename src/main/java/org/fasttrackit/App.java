@@ -23,7 +23,7 @@ public class App
 
         System.out.println("You entered the name " + dogName);
 
-        Dog dog = new Dog(dogName);
+        Animal dog = new Dog(dogName);
 
         dog.setAge(2);
         dog.setHealthLevel(8);     //from 1 to 10
@@ -139,7 +139,7 @@ public class App
 
         dog.showHappiness();
 
-        Cat cat = new Cat("Jessie");
+        Animal cat = new Cat("Jessie");
 
         cat.showHappiness();
     }
