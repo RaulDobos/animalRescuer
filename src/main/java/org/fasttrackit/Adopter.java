@@ -1,5 +1,4 @@
 package org.fasttrackit;
-import java.text.*;
 
 public class Adopter {
 
@@ -10,6 +9,8 @@ public class Adopter {
         name = passedNameParameter;
         money = passedMoneyParameter;
     }
+
+
 
     public void feed(Animal animal, AnimalFood food){
 

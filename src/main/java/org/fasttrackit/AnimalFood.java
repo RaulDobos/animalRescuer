@@ -10,9 +10,8 @@ public class AnimalFood {
     private int stock;
     private String flavour;
 
-    public AnimalFood(String passedNameParameter, int passedPriceParameter){
-        name = passedNameParameter;
-        price = passedPriceParameter;
+    public AnimalFood(String name){
+        this.name = name;
     }
 
     public String getName() {
