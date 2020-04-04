@@ -11,8 +11,16 @@ public class Animal {
     private String favouriteActivity;
     private boolean clean;
 
+    public Animal(){
+
+    }
+
     public Animal(String passedNameParameter){
         name = passedNameParameter;
+    }
+
+    public String getType(){
+        return "";
     }
 
     public String getName() {
@@ -80,5 +88,17 @@ public class Animal {
     }
 
     public void showHappiness(){
+    }
+
+    @Override
+    public String toString() {
+        return "\nAnimal properties are: \n" +
+                "Name: " + name + "\n" +
+                "Age: " + age + "\n" +
+                "Health level: " + healthLevel + "\n" +
+                "Hunger level: " + hungerLevel + "\n" +
+                "Hapiness level: " + hapinessLevel + "\n" +
+                "Favourite food: " + favouriteFood +  "\n" +
+                "Favourite activity: " + favouriteActivity + "\n";
     }
 }

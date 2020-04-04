@@ -5,10 +5,14 @@ public class Adopter {
    private String name;
    private int money;
 
+   public Adopter(){
+
+   }
+
     public Adopter(String passedNameParameter, int passedMoneyParameter){
         name = passedNameParameter;
         money = passedMoneyParameter;
-    }
+    }+
 
 
 
@@ -31,9 +35,10 @@ public class Adopter {
         }
 
         System.out.println(this.name + " just gave some " + food.getName() + " to " + animal.getName() + ".");
-        System.out.println("Hunger level: " + animal.getHungerLevel());
+        System.out.println("Hunger level: " + animal.getHungerLevel() + "\n");
 
         if(ok){
+            System.out.println("This is the " + animal.getType() + "'s favourite food!");
             System.out.println("Happiness level: " + animal.getHapinessLevel() + "\n");
         }
 
