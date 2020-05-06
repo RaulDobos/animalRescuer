@@ -119,6 +119,14 @@ public class Game {
         System.out.println("Please insert your name: ");
         String name = scanner.nextLine();
 
+        Pattern p = Pattern.compile("([0-9])");
+        Matcher m = p.matcher(name);
+
+        if(m.find()){
+            System.out.println("Your name cannot contain numbers.");
+            name = getAdopterNameFromUser();
+        }
+
         return name;
     }
 
@@ -128,8 +136,6 @@ public class Game {
         System.out.println("Please insert a name for your " + animal.getType() + ":");
         animal.setName(scanner.nextLine());
     }
-
-
 
     private void requireFeeding(){
         printAvailableFood();
@@ -159,12 +165,6 @@ public class Game {
 
     private void initFood(){
 
-//        private String name;
-//        private int price;
-//        private int weight;
-//        private LocalDate expirationDate;
-//        private int stock;
-//        private String flavour;
 
         AnimalFood food1 = new AnimalFood("Pedigree");
         food1.setPrice(8);

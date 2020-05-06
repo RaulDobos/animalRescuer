@@ -12,7 +12,7 @@ public class Adopter {
     public Adopter(String passedNameParameter, int passedMoneyParameter){
         name = passedNameParameter;
         money = passedMoneyParameter;
-    }+
+    }
 
 
 
